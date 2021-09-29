@@ -1,0 +1,10 @@
+.list {
+  width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(45deg, #161a2b, #262c49);
+  color: white;
+  border-radius: 23px;
+  filter: drop-shadow(11px 20px 16px black);
+  padding: 32px;
+  margin-top: 22px;
+}
