@@ -60,7 +60,6 @@ class Item extends React.Component {
             ))}
           </p>
           Score:
-          <div class="custom-select">
             <select value={this.state.rating} onChange={this.onChangeRating}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -68,7 +67,6 @@ class Item extends React.Component {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-          </div>
         </div>
         <div className="actions">
           <button onClick={this.onremove}>Eliminar</button>
