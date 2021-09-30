@@ -1,9 +1,9 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Books-TierList | React.js 📝</h1>
+<h1 align="center">Books-TierList | React.js 📚⚛️</h1>
 
 <div align="center">
-  App made to practice the basics acknowledgements of React.js from scratch.
+  React.js application displaying a list of books
 </div>
 
 <div align="center">
@@ -25,7 +25,6 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/GonzaloMB/books-tierlist-react.js
 # Install dependencies
 $ npm install
-
 # Run the app
 $ npm start
 ```
