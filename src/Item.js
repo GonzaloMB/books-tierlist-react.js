@@ -60,16 +60,20 @@ class Item extends React.Component {
             ))}
           </p>
           Score:
-            <select value={this.state.rating} onChange={this.onChangeRating}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+          <select value={this.state.rating} onChange={this.onChangeRating}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
         <div className="actions">
-          <button onClick={this.onremove}>Eliminar</button>
+          <div>
+            <a className="btn-delete" onClick={this.onremove} href="#">
+              <span className="span-delete">Delete</span>
+            </a>
+          </div>
         </div>
       </div>
     );

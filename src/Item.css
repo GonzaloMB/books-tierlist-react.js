@@ -7,6 +7,8 @@
 }
 .item .image img {
   height: 330px;
+  filter: drop-shadow(0px 4px 5px black);
+  height: 330px;
 }
 
 .item .title {
@@ -33,6 +35,7 @@
 }
 
 select {
+    cursor: pointer;
     display: block;
     font-size: 16px;
     font-family: 'Verdana', sans-serif;
@@ -53,4 +56,46 @@ select {
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
     appearance: none;
+}
+
+a{
+  background-color: #465ab4;
+  border-radius: 100px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  border-radius: 100px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
 }

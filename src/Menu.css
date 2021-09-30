@@ -30,9 +30,10 @@
   width: calc(500px - 20px - 10px);
   padding: 10px;
   font-size: 16px;
-  font-weight: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
-  background-color:#465ab4;
+  background-color: #465ab4;
 }
 .actions {
   width: 150px;
@@ -49,7 +50,8 @@
 }
 
 .new-item-panel-container {
-  background-color: #000;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -60,8 +62,10 @@
 .new-item-panel {
   width: 300px;
   margin: 20px auto;
-  background-color: white;
+  background: linear-gradient(to right, #161a2b, #262c49);
   padding: 20px;
+  filter: drop-shadow(8px 15px 11px black);
+  border-radius: 15px;
 }
 .new-item-panel p {
   padding: 5px 0;
@@ -69,8 +73,8 @@
 .logo-box {
   width: 200px !important;
   position: absolute;
-  top: 5%;
-  left: 13%;
+  top: 4%;
+  left: 20%;
   pointer-events: none;
 }
 .App-logo {
@@ -116,22 +120,23 @@
 }
 
 .btn-white {
-  background: linear-gradient(
-    90deg,
-    #263781 0%,
-    #465ab4 100%
-  );
-  font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  width: 168px;
+  height: 23px;
+  line-height: 25px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #263781 0%, #465ab4 100%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #fff;
 }
 .btn-white:hover {
-    background: linear-gradient(
-        to right,
-      rgb(1, 116, 10) 0%,
-      rgb(3, 190, 13) 100%
-    ) !important;
-    color: #fff;
-  }
+  background: linear-gradient(
+    to right,
+    rgb(1, 116, 10) 0%,
+    rgb(3, 190, 13) 100%
+  ) !important;
+  color: #fff;
+}
 
 .btn::after {
   content: "";
@@ -173,5 +178,46 @@
 }
 .text-box {
   position: absolute;
-  width: 100%;
+  width: 11%;
+}
+input.input {
+  border-radius: 25px;
+  outline: none;
+  width: calc(500px - 209px - 10px);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  background-color: #465ab4;
+}
+.btn-blue {
+  background-color: rgb(70 90 180);
+  color: white;
+  cursor: pointer;
+  border-radius: 18px;
+  width: 145px;
+}
+.btn-blue:hover {
+  background: linear-gradient(
+    to right,
+    rgb(1, 116, 10) 0%,
+    rgb(3, 190, 13) 100%
+  ) !important;
+  color: #fff;
+}
+.btn-normal {
+  background-color: rgb(70 90 180);
+  color: white;
+  cursor: pointer;
+  border-radius: 18px;
+  width: 145px;
+}
+.btn-normal:hover {
+  background: linear-gradient(
+    to right,
+    rgb(143, 0, 0) 0%,
+    rgb(245, 6, 6) 100%
+  ) !important;
+  color: #fff;
 }
