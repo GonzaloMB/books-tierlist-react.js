@@ -37,12 +37,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Acknowledgements🚀
 - **JSX**
 - **Componentes**
-- **Props y Eventos**
+- **Props and Events**
 - **Hooks**
-  - useState
-  - useEffect
-  - useRef
-- **LocalStorage**
 
 ## Built With 🛠️
 
